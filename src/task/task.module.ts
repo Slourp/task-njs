@@ -5,6 +5,7 @@ import { CreateTaskController } from '@src/task/controllers/create-task/create-t
 import { UpdateTaskController } from '@src/task/controllers/update-task/update-task.controller';
 import { DeleteTaskController } from '@src/task/controllers/delete-task/delete-task.controller';
 import { TaskService } from '@src/task/services/task/task.service';
+import { GetTaskByIdController } from './controllers/get-task-by-id/get-task-by-id.controller';
 
 @Module({
   controllers: [
@@ -12,6 +13,7 @@ import { TaskService } from '@src/task/services/task/task.service';
     CreateTaskController,
     UpdateTaskController,
     DeleteTaskController,
+    GetTaskByIdController,
   ],
   providers: [TaskService],
 })

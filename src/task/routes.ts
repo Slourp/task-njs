@@ -1,5 +1,6 @@
 const CREATE_TASK_ROUTE = '/tasks/create';
 const UPDATE_TASK_ROUTE = '/tasks/update/:id';
+const GET_TASK = '/tasks/:id';
 const DELETE_TASK_ROUTE = '/tasks/delete/:id';
 const GET_ALL_TASKS_ROUTE = '/tasks/';
 
@@ -10,4 +11,5 @@ export const ROUTES = {
   UPDATE_TASK_ROUTE,
   DELETE_TASK_ROUTE,
   GET_ALL_TASKS_ROUTE,
+  GET_TASK,
 };

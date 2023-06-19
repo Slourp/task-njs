@@ -33,4 +33,10 @@ export class TaskService {
     this.tasks = this.tasks.filter((task) => task.id !== id);
     return;
   }
+
+  async updateTaskStatusById(id: string, status: TaskStatus): Promise<Task> {
+    const task = await this.getTaskById(id);
+    task.status = status;
+    return task;
+  }
 }

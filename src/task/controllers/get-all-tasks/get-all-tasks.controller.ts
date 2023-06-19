@@ -8,7 +8,7 @@ export class GetAllTasksController {
   constructor(private tasksService: TaskService) {}
 
   @Get(ROUTES.GET_ALL_TASKS_ROUTE)
-  async getTasks(): Task[] {
+  async getTasks(): Promise<Task[]> {
     return await this.tasksService.getAllTasks();
   }
 }
